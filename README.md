@@ -1,4 +1,4 @@
-# AirBNB-Project
+# AirBNB Project
 
 This project aims to create a regression model to predict/suggest a price for an AirBNB listing based on various available data. The data used consists of three tables:
 - Calendar: Consists of price, availability, etc. of each listing over the course of the entire time period.
