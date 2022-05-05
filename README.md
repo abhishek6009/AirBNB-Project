@@ -11,10 +11,10 @@ This project aims to create a regression model to predict/suggest a price for an
 - Dummy Encoding of categorical variables - 'Room Type' and 'Property Type'.
 - Treating Datetime variables by converting them to UNIX timestamps so that they are numerical.
 
-There is a complex treatment of a column 'Amenities' but it is not detailed here as the resulting columns were later removed due to not being useful for predictions. the details of the treatment can be found in the PPT.
+There is a complex treatment of a column 'Amenities' but it is not detailed here as the resulting columns were later removed due to not being useful for predictions. The details of the treatment can be found in the PPT.
 
 ## Model Building and Evaluation
-After the final version of data has been created, we test a few different models and use the $R^2$ score and RMSE score to compare the models. These are the models, and their respective scores(Model - $R^2$ score - RMSE score):
+After the final version of data was created, we test a few different models and use the R2 score and RMSE score to compare the models. These are the models, and their respective scores(Model - R2 score - RMSE score):
 - Linear Regression - 22.42% - 149.82
 - Decision Tree Regressor - 98.64% - 19.82
 - Decision Tree Regressor (max_depth of 15, max_features is 'sqrt') - 95.81% - 34.84
@@ -25,7 +25,7 @@ After the final version of data has been created, we test a few different models
 - Gradient Boosting Regressor - 79.17% - 77.64
 - XGBoost Regressor - 98% - 24.06
 
-As we can see, Random Forest was the best estimator, giving an $R^2$ score of nearly 99% and an RMSE of just $17.81. This is a very good predictor. To check for overfitting, the data was split into 20% test set, and these numbers are based on the test set. The numbers remained fairly similar over multiple splits of the dataset, hence it is safe to conclude that we do not have overfitting. 
+As we can see, Random Forest was the best estimator, giving an R2 score of nearly 99% and an RMSE of just $17.81. This is a very good predictor. To check for overfitting, the data was split into 20% test set, and these numbers are based on the test set. The numbers remained fairly similar over multiple splits of the dataset, hence it is safe to conclude that we do not have overfitting. 
 
 ## Top Predictors
 Based on the Random Forest feature importances, we find that the following are the top 5 predictors, from most to least important (feature name - importance):
